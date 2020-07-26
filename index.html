@@ -45,9 +45,9 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>News</heading>
               <ul>
-                    <li>Coffee</li>
-                    <li>Tea</li>
-                    <li>Milk</li>
+                    <li>Aug 2020: Joined Dept. of CS, IIT Tirupati as an Assistant Professor.</li>
+                    <li>July 2020: My PhD Thesis won the <a href="https://ece.iisc.ac.in/~spcom/2020/bestdoctoraldissertation.html'>Best Doctoral Disseratation Award</a> for 2019-20 at the <a href="https://ece.iisc.ac.in/~spcom/2020/">SPCOM 2020</a> Conference.</li>
+                    <li>June 2020: Check out our pre-print on "Dataset Condensation with Gradeint Matching <a href="https://arxiv.org/abs/2006.05929">here</a>. </li>
               </ul>
             </td>
           </tr>
@@ -68,30 +68,23 @@
 
           <tr onmouseout="ff_stop()" onmouseover="ff_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ff_image'>
-                  <img src='images/lion_ff.jpg' width="160"></div>
-                <img src='images/lion_none.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function ff_start() {
-                  document.getElementById('ff_image').style.opacity = "1";
-                }
-
-                function ff_stop() {
-                  document.getElementById('ff_image').style.opacity = "0";
-                }
-                ff_stop()
-              </script>
+                <img src='images/robustness.jpg' width="160">
+              
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="robust-dl.html">
-                <papertitle>Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains</papertitle>
+                <papertitle>Robust Deep Learning</papertitle>
               </a>
               <br>
               
               <p></p>
-              <p>Machine learning systems are vulnerable to adversarial samples - malicious input with structured perturbations that can fool the systems to infer wrong predictions. Recently, Deep Convolutional Neural Network (CNN) based object classifiers are also shown to be fooled by adversarial perturbations that are quasi-imperceptible to humans. There have been multiple approaches formulated to compute the adversarial samples, exploiting linearity of the models, finite training data, etc. More importantly, adversarial samples can be transferred (generalized) from one model to another, even if the second model has a different architecture and trained on different subset of training data. This property allows an attacker to launch an attack without the knowledge of the target model’s internals, which makes them a dangerous threat for deploying the models in practice. Particularly, for critical applications that involve safety, robust models should be learned towards adversarial attacks. Therefore, the effect of adversarial perturbations warrants the need for in depth analysis of this subject.</p>
+              <p>Machine learning systems are vulnerable to adversarial samples - malicious input with structured perturbations that can fool the systems to infer wrong predictions.
+                Recently, Deep Convolutional Neural Network (CNN) based object classifiers are also shown to be fooled by adversarial perturbations that are quasi-imperceptible to 
+                humans. There have been multiple approaches formulated to compute the adversarial samples, exploiting linearity of the models, finite training data, etc. 
+                More importantly, adversarial samples can be transferred (generalized) from one model to another, even if the second model has a different architecture and trained
+                on different subset of training data. This property allows an attacker to launch an attack without the knowledge of the target model’s internals, which makes them
+                a dangerous threat for deploying the models in practice. Particularly, for critical applications that involve safety, robust models should be learned towards
+                adversarial attacks. Therefore, the effect of adversarial perturbations warrants the need for in depth analysis of this subject.</p>
             </td>
           </tr> 
 
