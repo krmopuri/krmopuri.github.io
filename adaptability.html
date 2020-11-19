@@ -25,15 +25,12 @@
               <br>
              <a href="https://arxiv.org/pdf/2011.09113">PDF</a>
               <p></p>
-              <p>Knowledge Distillation is an effective method to transfer the learning across deep neural networks. Typically, the dataset originally used for training the Teacher 
-                model is chosen as the "Transfer Set" to conduct the knowledge transfer to the Student. However, this original training data may not always be freely available due 
-                to privacy or sensitivity concerns. In such scenarios, existing approaches either iteratively compose a synthetic set representative of the original training dataset, 
-                one sample at a time or learn a generative model to compose such a transfer set. However, both these approaches involve complex optimization (GAN training or several 
-                backpropagation steps to synthesize one sample) and are often computationally expensive. In this paper, as a simple alternative, we investigate the effectiveness of 
-                "arbitrary transfer sets" such as random noise, publicly available synthetic, and natural datasets, all of which are completely unrelated to the original training 
-                dataset in terms of their visual or semantic contents. Through extensive experiments on multiple benchmark datasets such as MNIST, FMNIST, CIFAR-10 and CIFAR-100, 
-                we discover and validate surprising effectiveness of using arbitrary data to conduct knowledge distillation when this dataset is "target-class balanced". 
-                We believe that this important observation can potentially lead to designing baselines for the data-free knowledge distillation task.</p>
+              <p>Knowledge Distillation (KD) is an effective method to transfer the learning across deep neural networks. Typically, the dataset originally used for training the Teacher 
+                is chosen as the "Transfer Set" to conduct KD. However, this data may not always be freely available. In such scenarios, existing approaches either 
+                iteratively compose a synthetic set representative of the original training dataset, 
+                or learn a generative model to compose such a transfer set. However, both these approaches involve complex optimization and are computationally expensive. 
+                In this paper, as a simple alternative, we investigate the effectiveness of 
+                "arbitrary transfer sets" such as random noise, publicly available synthetic/natural datasets, all of which are completely unrelated to the original training dataset.</p>
             </td>
           </tr> 
 
