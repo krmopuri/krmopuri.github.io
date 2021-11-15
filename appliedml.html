@@ -21,8 +21,7 @@
               <br>
               <a href='https://authors.elsevier.com/a/1dqiR_KxNwDneA'>[Link]</a>
               <p></p>
-              <p>We present a novel approach for detecting early signs for the stuck events in drilling using Deep Learning. 
-                We adapt Autoencoder for anticipating the ‘stuck’ events during the drilling process. 
+              <p>We adapt Autoencoder for anticipating the ‘stuck’ events during the drilling process. 
                 We build Autoencoders on Recurrent Neural Networks (RNNs) to model the normal drilling activity, thereby detecting the stuck incidents as anomalous activity. 
                 We conduct experiments on the drilling data collected from 30 field wells with diverse well profiles and demonstrate 
                 that our approach obtains promising results for the stuck sign detection. Furthermore towards explaining the trained model’s prediction, we present 
@@ -31,6 +30,34 @@
           </tr> 
 
  </tbody></table> 
+
+<!-- SPE/IATMI 2021  -->
+
+<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+         
+             <td style="padding:20px;width:25%;vertical-align:middle">
+              
+                  <img src='images/ae-autoencoder.jpg' width="260">
+              
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">              
+                <papertitle>An Unsupervised Learning Model for Pipe Stuck Predictions Using a Long Short-Term Memory Autoencoder Architecture</papertitle>              
+              <br>              
+              Yujin Nakagawa, Tomoya Inoue, Hakan Bilen, <strong>Konda R. Mopuri</strong> Keisuke Miyoshi, Shungo Abe, Ryota Wada, Kouhei Kuroda, Hitoshi Tamamura
+              <br>
+        <em>SPE/IATMI Asia Pacific Oil & Gas Conference and Exhibition (2021)</em>
+              <br>
+              <a href='https://onepetro.org/SPEAPOG/proceedings-abstract/21APOG/1-21APOG/D011S009R006/470079'>[Link]</a>
+              <p></p>
+              <p>This technique is an unsupervised learning model built using an encoder-decoder, long short-term memory architecture. 
+                The model is trained with the time series data of normal drilling operations and based on an important hypothesis: reconstruction errors 
+                between observed and predicted values are higher around the time of pipe sticking than during normal drilling operations. 
+                The trained model was then applied to 34 actual stuck-pipe events, where it was found that reconstruction errors increased prior to the pipe 
+                sticking in some cases (thereby partly confirming our hypothesis) and were sensitive to large variations in the drilling parameters. </p>
+            </td>
+          </tr> 
+
+ </tbody></table>
  
 <!--    SPE 2021  -->
 
@@ -51,10 +78,9 @@
               <a href='https://onepetro.org/SJ/article-abstract/26/02/551/454096/Early-Stuck-Pipe-Sign-Detection-with-Depth-Domain'>[Link]</a>
               <p></p>
               <p>Early signs of stuck pipe are assumed to show common patterns in the monitored data set, and designing a data clip that well captures these 
-                features is critical for efficient prediction. With the valuable input from drilling engineers, we propose a 3D-convolutional neural network (CNN) 
+                features is critical for efficient prediction. We propose a 3D-convolutional neural network (CNN) 
                 approach with depth-domain data clip. The clip illustrates depth-domain data in 2D-histogram images with unique abstraction of the time domain. 
-                Thirty field well data prepared in multivariate time series are used in this study.
-                The test data include six stuck incidents, and the 3D-CNN model has successfully detected early signs of stuck in three cases before the occurrence. 
+                The 3D-CNN model has successfully detected early signs of stuck in three cases before the occurrence. 
                 The portion of the data clip contributing to anomaly detection is indicated by gradient-weighted class activation map (grad-CAM), 
                 providing physical explanation of the black box model. We consider such explanation inevitable for the drilling engineers to interpret 
                 the signs for rational decision-making.
