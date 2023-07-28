@@ -35,12 +35,12 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading><strong>Abstract</strong></heading>
               <p>
-                Data-free Knowledge Extraction (DFKE) refers to the process of extracting useful information from a trained deep neural network (DNN) without accessing the underlying training data over which the DNN is trained. 
-                The extracted information can be diverse. For instance, it can be a replica of the DNN itself, some sensitive information about the underlying training data, or patterns from thereof, etc. DFKE can be extremely 
-                vexing particularly in deployments like MLaaS (Machine Learning as a service). Considering the amount of data, human expertise, and computational resources that are typically required to learn the sophisticated DNNs, 
-                it is natural to consider them as intellectual property. Therefore, they need to be protected against any such attempts of extraction (referred to as attacks). On the other hand, philosophically it would be interesting 
-                to (i) understand the utility of these trained models without their training data, and (ii) formulate guarantees on the information leakage (or extraction). In this tutorial, I plan to first introduce the phenomenon 
-                of data-free model extraction and discuss different ways in which it can be manifested, both in white-box and black-box scenarios. In the later part, I will focus more on the potential threats of leaking sensitive 
+                Data-free Knowledge Extraction (DFKE) refers to extracting useful information from a trained deep neural network (DNN) without accessing the underlying training data over which the DNN is trained. 
+                The extracted information can be diverse. For instance, it can be a replica of the DNN itself, some sensitive information about the underlying training data, patterns from thereof, etc. DFKE can be extremely 
+                vexing, particularly in deployments like MLaaS (Machine Learning as a service). Considering the amount of data, human expertise, and computational resources typically required to learn sophisticated DNNs, 
+                it is natural to consider them intellectual property. Therefore, they need to be protected against any such attempts of extraction (referred to as attacks). On the other hand, philosophically, it would be interesting 
+                to (i) understand the utility of these trained models without their training data and (ii) formulate guarantees on the information leakage (or extraction). In this tutorial, I plan first to introduce the phenomenon 
+                of data-free model extraction and discuss different ways in which it can be manifested, both in white-box and black-box scenarios. Later, I will focus more on the potential threats of leaking sensitive 
                 information about the training data to a dishonest user in the form of different attacks. Finally, I will discuss some of the active directions to investigate further.
                     
               </p>
@@ -51,10 +51,11 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading><strong>Topics to be discussed</strong></heading>
+              <heading><strong>Topics to be discussed (may not be in the same sequence)</strong></heading>
               <ul>
                     <li> Introduction
                           <ul>
+                          <li>Deploying Deep models post-training: What and What not?</li>
                           <li>Knowledge Distillation</li>
                           <li>Noise Optimization towards CNN visualization</li>
                           <li>Generative Adversarial Networks (GAN)</li>
@@ -63,15 +64,29 @@
                           <ul>
                           <li>Via Noise Optimization</li>
                           <li>Via Generative Reconstruction</li>
+                          <li>Adversarial Exploration</li>
                           </ul>
                     <li> Data-free attacks (towards extracting sensitive information about the training data)
-                    <li> Conclusion and Future directions
+                    <li> Conclusion and Future Directions
 
               </ul>
              
             </td>
           </tr>
         </tbody></table>
+
+<!--             Slides section              -->        
+
+         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading><strong><a href='KRM-DFKE-NCVPRIPG-2023.pdf'>Slides</a>a</strong></heading>
+             
+            </td>
+          </tr>
+        </tbody></table>
+  
+        
 <!--             Schedule section              -->        
 
          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -152,12 +167,11 @@
                  </ol>
                 <li> Black-box setting and other attacks
                  <ol>
-                   <li>Stealing ML models via prediction APIs [<a href='https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_tramer.pdf'>USENIX</a>a 2016]<mark>(attacks on online services of Amazon and BigML)</mark></li>
+                   <li>Stealing ML models via prediction APIs [<a href='https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_tramer.pdf'>USENIX</a> 2016]<mark>(attacks on online services of Amazon and BigML)</mark></li>
                    <li>Membership Inference attack, [<a href='https://www.cs.cornell.edu/~shmat/shmat_oak17.pdf'>Shokri et al. 2017]</a></li>
-                   <li>Model Inversion attack, [<a href='https://arxiv.org/pdf/1911.07135.pdf'>Zhang et al.</a>]</li>                   
+                   <li>Model Inversion attack, [<a href='https://arxiv.org/pdf/1911.07135.pdf'>Zhang et al.</a> 2020]</li>                   
                    <li>DFME (soft label) [<a href='https://arxiv.org/abs/2011.14779'>CVPR, 2021</a>]</li>
-                   <li>DFME (hard label) [<a href='https://openaccess.thecvf.com/content/CVPR2022/papers/Sanyal_Towards_Data-Free_Model_Stealing_in_a_Hard_Label_Setting_CVPR_2022_paper.pdf'>CVPR 2022</a>]</li>
-                   
+                   <li>DFME (hard label) [<a href='https://openaccess.thecvf.com/content/CVPR2022/papers/Sanyal_Towards_Data-Free_Model_Stealing_in_a_Hard_Label_Setting_CVPR_2022_paper.pdf'>CVPR 2022</a>]</li>                   
                  </ol>
                </ul>
               
